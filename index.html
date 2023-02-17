@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="continar">
+        <div class="calculator">
+            <form>
+                <div class="dicplay">
+                    <input type="text" name="dicplay">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="dicplay.value=''" class="po">
+                    <input type="button" value="DE" onclick="dicplay.value=dicplay.value.toString().slice(0,-1) " class="po">
+
+                    <input type="button" value="." onclick="dicplay.value+='.'" class="po">
+                    <input type="button" value="/" onclick="dicplay.value+='/'" class="po">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="dicplay.value+='7'">
+                    <input type="button" value="8" onclick="dicplay.value+='8'">
+                    <input type="button" value="9" onclick="dicplay.value+='9'">
+                    <input type="button" value="*" onclick="dicplay.value+='*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="dicplay.value+='4'">
+                    <input type="button" value="5" onclick="dicplay.value+='5'">
+                    <input type="button" value="6" onclick="dicplay.value+='6'">
+                    <input type="button" value="-" onclick="dicplay.value+='-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="dicplay.value+='1'">
+                    <input type="button" value="2" onclick="dicplay.value+='2'">
+                    <input type="button" value="3" onclick="dicplay.value+='3'">
+                    <input type="button" value="+" onclick="dicplay.value+='+'">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="dicplay.value+='00'">
+                    <input type="button" value="0" onclick="dicplay.value+='0'">
+                    <input type="button" value="=" onclick = "dicplay.value= eval (dicplay.value)" class="equal" >
+                </div>
+            </form>
+        </div>
+  
+  
+  
+    </div>
+
+
+
+</body>
+</html>
